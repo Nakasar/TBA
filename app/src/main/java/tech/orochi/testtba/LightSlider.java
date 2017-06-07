@@ -17,8 +17,11 @@ public class LightSlider extends Fragment {
     SeekBar lightVolume;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        lightVolumeText = (TextView) getView().findViewById(R.id.lightVolumeText);
-        lightVolume = (SeekBar) getView().findViewById(R.id.lightVolume);
+
+        View v = inflater.inflate(R.layout.light_slider, container, false);
+
+        lightVolume = (SeekBar) v.findViewById(R.id.lightVolume);
+        lightVolumeText = (TextView) v.findViewById(R.id.lightVolumeText);
         lightVolume.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -35,6 +38,6 @@ public class LightSlider extends Fragment {
 
             }
         });
-        return inflater.inflate(R.layout.light_slider, container, false);
+        return v;
     }
 }
