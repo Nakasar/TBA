@@ -1,8 +1,13 @@
 package tech.orochi.testtba;
 
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
+import android.util.SparseArray;
+import android.util.SparseIntArray;
+
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,6 +22,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // On initialise nos fragments,
+        homePanel = new HomePanel();
+        lightPanel = new LightPanel();
+        soundPanel = new SoundPanel();
+        musicPanel = new MusicPanel();
+        imagePanel = new ImagePanel();
+
         // Check that the activity is using the layout version with
         // the fragment_container FrameLayout
         if (findViewById(R.id.fragment_container) != null) {
@@ -29,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Create a new Fragment to be placed in the activity layout
-            HomePanel firstFragment = new HomePanel();
+            HomePanel firstFragment = homePanel;
 
             // In case this activity was started with special instructions from an
             // Intent, pass the Intent's extras to the fragment as arguments
@@ -41,5 +53,17 @@ public class MainActivity extends AppCompatActivity {
 
         }
 
+    }
+
+    public void switchPanel(android.support.v4.app.Fragment newFragment){
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+
+        // Replace whatever is in the fragment_container view with this fragment,
+        // and add the transaction to the back stack so the user can navigate back
+        transaction.replace(R.id.fragment_container, newFragment);
+        transaction.addToBackStack(null);
+
+        // Commit the transaction
+        transaction.commit();
     }
 }
