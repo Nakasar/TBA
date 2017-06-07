@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">TestTBA</string>
+    <string name="homme_panel_button">Home</string>
+    <string name="light_panel_button">Home</string>
+    <string name="sound_panel_button">Home</string>
+    <string name="music_panel_button">Home</string>
+    <string name="image_panel_button">Home</string>
 </resources>

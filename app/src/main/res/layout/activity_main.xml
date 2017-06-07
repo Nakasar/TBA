@@ -6,6 +6,13 @@
     android:layout_height="match_parent"
     tools:context="tech.orochi.testtba.MainActivity">
 
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="tech.orochi.testtba.NavigationMenu"
+        android:id="@+id/navigation_menu"
+        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
