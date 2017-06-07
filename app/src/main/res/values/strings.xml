@@ -5,4 +5,10 @@
     <string name="sound_panel_button">Home</string>
     <string name="music_panel_button">Home</string>
     <string name="image_panel_button">Home</string>
+    <string name="home_panel_hello_world">Home Panel Hello world!</string>
+    <string name="sound_panel_hello_world">Sound Panel Hello world!</string>
+    <string name="image_panel_hello_world">Image Panel Hello world!</string>
+    <string name="light_panel_hello_world">Light Panel Hello world!</string>
+    <string name="music_panel_hello_world">Music Panel Hello world!</string>
+
 </resources>
