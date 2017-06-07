@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:context="tech.orochi.testtba.NavigationMenu">
+
+    <ImageButton
+        android:id="@+id/home_panel_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/homme_panel_button"
+        app:srcCompat="@drawable/ic_home_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/light_panel_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/light_panel_button"
+        app:srcCompat="@drawable/ic_lightbulb_outline_black_24dp" />
+
+
+    <ImageButton
+        android:id="@+id/music_panel_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/music_panel_button"
+        app:srcCompat="@drawable/ic_music_note_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/sound_panel_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/sound_panel_button"
+        app:srcCompat="@drawable/ic_volume_down_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/image_panel_button"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/image_panel_button"
+        app:srcCompat="@drawable/ic_landscape_black_24dp" />
+
+</LinearLayout>
