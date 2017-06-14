@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             // Create a new Fragment to be placed in the activity layout
-            HomePanel firstFragment = new HomePanel();
+            LightPanel firstFragment = new LightPanel();
 
             // In case this activity was started with special instructions from an
             // Intent, pass the Intent's extras to the fragment as arguments
