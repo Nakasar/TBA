@@ -3,12 +3,12 @@ package tech.orochi.testtba;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.SeekBar;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -31,7 +31,6 @@ public class LightSlider extends Fragment {
     String bridge = "192.168.1.18";
     String apiKey = "055644/9947";
 
-    TextView lightVolumeText;
     SeekBar lightVolume;
     Button bGreen;
     Button bRed;
@@ -60,6 +59,7 @@ public class LightSlider extends Fragment {
 
             }
         });
+
         bGreen = (Button) v.findViewById(R.id.bGreen);
         bGreen.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -125,6 +125,9 @@ public class LightSlider extends Fragment {
                 return params;
             }
         };
+
+        //Should access bridge IP, but can't... Need to refactor with the use of interfaces...
+
         Toast toast = Toast.makeText(this.getContext(), urlString, Toast.LENGTH_SHORT);
         toast.show();
         queue.add(jsObjectRequest);
