@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home_panel_button"
+        android:title="@string/homme_panel_button"
+        android:icon="@drawable/ic_home_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/light_panel_button"
+        android:title="@string/light_panel_button"
+        android:icon="@drawable/ic_lightbulb_outline_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+
+    <item
+        android:id="@+id/music_panel_button"
+        android:title="@string/music_panel_button"
+        android:icon="@drawable/ic_music_note_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/sound_panel_button"
+        android:title="@string/sound_panel_button"
+        android:icon="@drawable/ic_volume_down_black_24dp"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/image_panel_button"
+        android:title="@string/image_panel_button"
+        android:icon="@drawable/ic_landscape_black_24dp"
+        app:showAsAction="ifRoom"/>
+</menu>
